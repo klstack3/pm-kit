@@ -3,7 +3,6 @@
 Structured AI prompts for every phase of PM work. Each prompt is a standalone file — grab what you need, skip what you don't.
 
 For how we evaluate prompt quality, see [Evaluation Criteria](./EVALUATION-CRITERIA.md).
-For more on writing effective prompts, see: [Prompt Writing Best Practices]({{MEDIUM_ARTICLE_LINK}})
 
 ## How to Use
 
