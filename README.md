@@ -1,2 +1,2 @@
 # pm-kit
-My curated collection of anything a product manager might need. 
+Things product managers might find useful - take what you like, leave what you don't. 
