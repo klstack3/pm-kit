@@ -32,9 +32,7 @@ Advice for getting the best results.
 
 ## Prompts
 
-<!-- TODO: Add prompt category tables as prompt files are written -->
-
-Coming soon. Check back or watch this repo for updates.
+- [Strategy prompts](https://github.com/klstack3/pm-kit/tree/main/prompts/strategy)
 
 ## Contributing
 
