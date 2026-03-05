@@ -56,6 +56,7 @@ Condense the following document into an executive summary:
 **Input:** A 2,500-word competitive analysis document, for VP of Product, decision needed on whether to accelerate feature X to counter competitor move.
 
 **Sample output excerpt:**
+
 > **Bottom Line:** Competitor Y launched a feature directly competitive with our core differentiator. **We have a 3-month window before their enterprise rollout to ship our advanced version and retain positioning.**
 >
 > **Decision:** Approve reallocating 2 engineers from Project Z to accelerate Feature X, targeting 8-week delivery vs. the current 14-week timeline.
@@ -79,6 +80,7 @@ For more on writing and evaluating effective prompts, see: [Prompt Writing Best 
 **Inspiration:** Adapted from executive summary prompts shared by [Sushant Kumar](https://sushantkr17.medium.com/everything-about-prompt-engineering-for-product-managers-in-2025-even-after-the-gpt-5-release-ddceee806906) (Medium) and BLUF communication principles.
 
 **What we changed and why:**
+
 - **Added the "Decision Needed" variable.** The original summarized documents generically. We require the user to state what decision the summary needs to support, which fundamentally changes what gets included.
 - **Added the "bold the most important sentence" rule.** Forces prioritization that the original didn't require.
 - **Added the ambiguity flag rule.** The original let the AI fill in gaps silently. We require it to flag when the source document is unclear.
@@ -88,13 +90,13 @@ For more on writing and evaluating effective prompts, see: [Prompt Writing Best 
 
 ## Evaluation
 
-| Criteria | Score | Rationale |
-|---|---|---|
-| **Specificity** | 3/3 | Clear role (chief of staff), audience-aware, decision-context-aware, explicit structure |
-| **Structure** | 3/3 | Five-section format from bottom line through ask |
-| **Reasoning Guidance** | 2/3 | "Only include if it affects the decision" is strong guidance; but no explicit analytical framework |
-| **Output Quality** | 3/3 | Scannable, decision-oriented output with bold emphasis on the key sentence |
-| **Robustness** | 3/3 | Ambiguity flagging, informational-only path, jargon-awareness |
-| **Total** | **14/15** | |
+| Criteria               | Score     | Rationale                                                                                          |
+| ---------------------- | --------- | -------------------------------------------------------------------------------------------------- |
+| **Specificity**        | 3/3       | Clear role (chief of staff), audience-aware, decision-context-aware, explicit structure            |
+| **Structure**          | 3/3       | Five-section format from bottom line through ask                                                   |
+| **Reasoning Guidance** | 2/3       | "Only include if it affects the decision" is strong guidance; but no explicit analytical framework |
+| **Output Quality**     | 3/3       | Scannable, decision-oriented output with bold emphasis on the key sentence                         |
+| **Robustness**         | 3/3       | Ambiguity flagging, informational-only path, jargon-awareness                                      |
+| **Total**              | **14/15** |                                                                                                    |
 
 > **Scoring guide:** Below 9 = not ready for the repo. 9–12 = solid, worth including. 13+ = exceptional. See our [evaluation criteria](../EVALUATION-CRITERIA.md) for details.

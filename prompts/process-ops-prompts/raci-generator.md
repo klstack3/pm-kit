@@ -63,6 +63,7 @@ Generate 5 questions to ask the team during RACI review to surface hidden disagr
 ## Example
 
 **Input:**
+
 - Initiative: Launch new enterprise SSO feature
 - Teams: Product (PM), Engineering (2 backend, 1 frontend), Security, Sales Engineering, Documentation, Customer Success
 - Workstreams: Let AI suggest
@@ -70,14 +71,15 @@ Generate 5 questions to ask the team during RACI review to surface hidden disagr
 - Tensions: Security and Engineering disagree on who owns the auth architecture decision
 
 **Sample output excerpt:**
-> | Workstream | PM | Backend Eng | Frontend Eng | Security | Sales Eng | Docs | CS |
-> |---|---|---|---|---|---|---|---|
-> | Auth architecture decision | C | R | — | **A** | C | — | — |
-> | API implementation | C | **A/R** | — | C | — | — | — |
-> | Admin UI | C | — | **A/R** | — | C | I | — |
-> | Security review & pen test | I | C | — | **A/R** | — | — | — |
-> | Customer documentation | C | C | — | — | — | **A/R** | I |
-> | Sales enablement | C | — | — | — | **A/R** | C | C |
+
+> | Workstream                 | PM  | Backend Eng | Frontend Eng | Security | Sales Eng | Docs    | CS  |
+> | -------------------------- | --- | ----------- | ------------ | -------- | --------- | ------- | --- |
+> | Auth architecture decision | C   | R           | —            | **A**    | C         | —       | —   |
+> | API implementation         | C   | **A/R**     | —            | C        | —         | —       | —   |
+> | Admin UI                   | C   | —           | **A/R**      | —        | C         | I       | —   |
+> | Security review & pen test | I   | C           | —            | **A/R**  | —         | —       | —   |
+> | Customer documentation     | C   | C           | —            | —        | —         | **A/R** | I   |
+> | Sales enablement           | C   | —           | —            | —        | **A/R**   | C       | C   |
 >
 > ⚠️ **Accountability Gap:** Auth architecture decision has Security as A and Backend Eng as R. These are on different teams — high coordination risk. Recommend a joint kickoff meeting in week 1 with a written decision doc due by end of week 2.
 
@@ -104,13 +106,13 @@ For more on writing and evaluating effective prompts, see: [Prompt Writing Best 
 
 ## Evaluation
 
-| Criteria | Score | Rationale |
-|---|---|---|
-| **Specificity** | 3/3 | Program manager role, four-section output, explicit RACI rules (single A, minimize C) |
-| **Structure** | 3/3 | Matrix table + gap analysis + escalation + review questions |
-| **Reasoning Guidance** | 3/3 | Rules for valid RACI, gap detection criteria, review questions that surface disagreements |
-| **Output Quality** | 3/3 | Formatted matrix with flags, escalation paths, and facilitation questions |
-| **Robustness** | 3/3 | Known tensions as input, gap analysis, and review questions all handle ambiguity |
-| **Total** | **15/15** | |
+| Criteria               | Score     | Rationale                                                                                 |
+| ---------------------- | --------- | ----------------------------------------------------------------------------------------- |
+| **Specificity**        | 3/3       | Program manager role, four-section output, explicit RACI rules (single A, minimize C)     |
+| **Structure**          | 3/3       | Matrix table + gap analysis + escalation + review questions                               |
+| **Reasoning Guidance** | 3/3       | Rules for valid RACI, gap detection criteria, review questions that surface disagreements |
+| **Output Quality**     | 3/3       | Formatted matrix with flags, escalation paths, and facilitation questions                 |
+| **Robustness**         | 3/3       | Known tensions as input, gap analysis, and review questions all handle ambiguity          |
+| **Total**              | **15/15** |                                                                                           |
 
 > **Scoring guide:** Below 9 = not ready for the repo. 9–12 = solid, worth including. 13+ = exceptional. See our [evaluation criteria](../EVALUATION-CRITERIA.md) for details.

@@ -64,6 +64,7 @@ If the raw context I provided is ambiguous about any of the above, flag it and t
 **Input:** Rough notes from a Slack thread about whether to build a custom notification system or use a third-party service.
 
 **Sample output excerpt:**
+
 > **Decision:** Use Customer.io for transactional notifications; defer building custom notification infrastructure to H2.
 >
 > **What We're Giving Up:** Full control over delivery timing and retry logic. Customer.io's retry behavior is configurable but not as granular as a custom system.
@@ -93,13 +94,13 @@ For more on writing and evaluating effective prompts, see: [Prompt Writing Best 
 
 ## Evaluation
 
-| Criteria | Score | Rationale |
-|---|---|---|
-| **Specificity** | 3/3 | Clear role, seven-section structure, accepts messy raw input |
-| **Structure** | 3/3 | Seven sections progressing from decision through action items |
-| **Reasoning Guidance** | 3/3 | Options with for/against arguments, explicit rationale, trade-off acknowledgment |
-| **Output Quality** | 3/3 | Complete decision record with revisit conditions and action items |
-| **Robustness** | 3/3 | Handles messy input, flags ambiguity, revisit conditions prevent relitigating |
-| **Total** | **15/15** | |
+| Criteria               | Score     | Rationale                                                                        |
+| ---------------------- | --------- | -------------------------------------------------------------------------------- |
+| **Specificity**        | 3/3       | Clear role, seven-section structure, accepts messy raw input                     |
+| **Structure**          | 3/3       | Seven sections progressing from decision through action items                    |
+| **Reasoning Guidance** | 3/3       | Options with for/against arguments, explicit rationale, trade-off acknowledgment |
+| **Output Quality**     | 3/3       | Complete decision record with revisit conditions and action items                |
+| **Robustness**         | 3/3       | Handles messy input, flags ambiguity, revisit conditions prevent relitigating    |
+| **Total**              | **15/15** |                                                                                  |
 
 > **Scoring guide:** Below 9 = not ready for the repo. 9–12 = solid, worth including. 13+ = exceptional. See our [evaluation criteria](../EVALUATION-CRITERIA.md) for details.

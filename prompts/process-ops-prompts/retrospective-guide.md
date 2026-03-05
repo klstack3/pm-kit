@@ -80,12 +80,14 @@ Also review the previous action items I provided and suggest how to open the ret
 ## Example
 
 **Input:**
+
 - Team: Platform engineering (6 people)
 - Sprint: Sprint 14 (2 weeks)
 - Context: Just missed a release deadline due to an unexpected production incident mid-sprint
 - Previous Action Items: "Improve monitoring alerts (owner: Sarah)" and "Document deployment runbook (owner: James)"
 
 **Sample output excerpt:**
+
 > **Format: Sailboat** — Chosen because the team just dealt with a crisis (production incident = rock they hit), and this format naturally separates what was pushing them forward from what was holding them back, while keeping the goal (island) visible.
 >
 > **Discussion Prompt for Top Theme:**
@@ -110,7 +112,7 @@ For more on writing and evaluating effective prompts, see: [Prompt Writing Best 
 
 ## Attribution
 
-**Inspiration:** Original to PM-Kit, synthesized from agile coaching best practices, Esther Derby & Diana Larsen's *Agile Retrospectives*, and the Retromat tool.
+**Inspiration:** Original to PM-Kit, synthesized from agile coaching best practices, Esther Derby & Diana Larsen's _Agile Retrospectives_, and the Retromat tool.
 
 **What we changed and why:** Written from scratch. Existing retro prompts ([LearnPrompt.org](https://learnprompt.org/chatgpt-prompts-for-product-managers/), [Breaking Product](https://breakingproduct.substack.com/p/25-prompts-for-product-managers-obsessed)) generate generic retro agendas. Our version adds context-aware format selection, previous action item accountability, systemic discussion prompts, and strict action item quality rules.
 
@@ -118,13 +120,13 @@ For more on writing and evaluating effective prompts, see: [Prompt Writing Best 
 
 ## Evaluation
 
-| Criteria | Score | Rationale |
-|---|---|---|
-| **Specificity** | 3/3 | Agile coach role, seven-section retro plan with detailed requirements per section |
-| **Structure** | 3/3 | Full retro arc from check-in through follow-up; time allocations for each section |
-| **Reasoning Guidance** | 3/3 | Format selection with rationale; systemic discussion prompts; action item quality rules |
-| **Output Quality** | 3/3 | Complete facilitation plan with examples of good vs. bad action items |
-| **Robustness** | 3/3 | Previous action item review, format selection based on context, follow-up plan |
-| **Total** | **15/15** | |
+| Criteria               | Score     | Rationale                                                                               |
+| ---------------------- | --------- | --------------------------------------------------------------------------------------- |
+| **Specificity**        | 3/3       | Agile coach role, seven-section retro plan with detailed requirements per section       |
+| **Structure**          | 3/3       | Full retro arc from check-in through follow-up; time allocations for each section       |
+| **Reasoning Guidance** | 3/3       | Format selection with rationale; systemic discussion prompts; action item quality rules |
+| **Output Quality**     | 3/3       | Complete facilitation plan with examples of good vs. bad action items                   |
+| **Robustness**         | 3/3       | Previous action item review, format selection based on context, follow-up plan          |
+| **Total**              | **15/15** |                                                                                         |
 
 > **Scoring guide:** Below 9 = not ready for the repo. 9–12 = solid, worth including. 13+ = exceptional. See our [evaluation criteria](../EVALUATION-CRITERIA.md) for details.

@@ -66,6 +66,7 @@ Apply these principles:
 ## Example
 
 **Input:**
+
 - Type: Design review
 - Duration: 45 minutes
 - Attendees: PM (me), lead designer, 2 engineers, design director (approver)
@@ -73,16 +74,17 @@ Apply these principles:
 - Context: We've iterated 3 times based on user testing. This should be the final review.
 
 **Sample output excerpt:**
+
 > **Meeting Purpose:** Get design director approval on onboarding wireframes (v3) to unblock engineering start.
 >
 > **Pre-Read:** Review wireframes in Figma [link]. Focus on steps 2-4 where the biggest changes from v2 are.
 >
-> | # | Topic | Time | Owner | Type | Output |
-> |---|---|---|---|---|---|
-> | 1 | Decision: Approve wireframes v3 | 20 min | Designer | 🔴 Decision | Approved / approved with changes / needs another round |
-> | 2 | Discussion: Open question on step 4 error handling | 10 min | PM | 🟡 Discussion | Agreed approach to error states |
-> | 3 | Information: Eng estimation timeline | 5 min | Lead Eng | 🔵 Information | Shared estimate, questions noted |
-> | — | Buffer | 10 min | — | — | Overflow or end early |
+> | #   | Topic                                              | Time   | Owner    | Type           | Output                                                 |
+> | --- | -------------------------------------------------- | ------ | -------- | -------------- | ------------------------------------------------------ |
+> | 1   | Decision: Approve wireframes v3                    | 20 min | Designer | 🔴 Decision    | Approved / approved with changes / needs another round |
+> | 2   | Discussion: Open question on step 4 error handling | 10 min | PM       | 🟡 Discussion  | Agreed approach to error states                        |
+> | 3   | Information: Eng estimation timeline               | 5 min  | Lead Eng | 🔵 Information | Shared estimate, questions noted                       |
+> | —   | Buffer                                             | 10 min | —        | —              | Overflow or end early                                  |
 
 ---
 
@@ -99,9 +101,10 @@ For more on writing and evaluating effective prompts, see: [Prompt Writing Best 
 
 ## Attribution
 
-**Inspiration:** Adapted from meeting facilitation prompts on [LearnPrompt.org](https://learnprompt.org/chatgpt-prompts-for-product-managers/) and meeting design principles from *The Surprising Science of Meetings* by Steven Rogelberg.
+**Inspiration:** Adapted from meeting facilitation prompts on [LearnPrompt.org](https://learnprompt.org/chatgpt-prompts-for-product-managers/) and meeting design principles from _The Surprising Science of Meetings_ by Steven Rogelberg.
 
 **What we changed and why:**
+
 - **Added the Information/Discussion/Decision type system.** The original generated topic lists without distinguishing what type of engagement each item needs.
 - **Added pre-work requirements.** The original didn't address meeting preparation, which is essential for productive meetings.
 - **Added meeting hygiene section.** Notes, action items, and end-early triggers aren't in any original prompt.
@@ -111,13 +114,13 @@ For more on writing and evaluating effective prompts, see: [Prompt Writing Best 
 
 ## Evaluation
 
-| Criteria | Score | Rationale |
-|---|---|---|
-| **Specificity** | 3/3 | Clear role, meeting type awareness, explicit agenda item format with owners and types |
-| **Structure** | 3/3 | Purpose → pre-read → agenda table → parking lot → hygiene; table format for agenda items |
-| **Reasoning Guidance** | 2/3 | Good meeting principles embedded; type system guides engagement; but no explicit facilitation strategies |
-| **Output Quality** | 3/3 | Table format with owners, times, types, and outputs; immediately usable |
-| **Robustness** | 2/3 | "Could be an email" check and buffer time handle common failures; but doesn't handle conflict scenarios |
-| **Total** | **13/15** | |
+| Criteria               | Score     | Rationale                                                                                                |
+| ---------------------- | --------- | -------------------------------------------------------------------------------------------------------- |
+| **Specificity**        | 3/3       | Clear role, meeting type awareness, explicit agenda item format with owners and types                    |
+| **Structure**          | 3/3       | Purpose → pre-read → agenda table → parking lot → hygiene; table format for agenda items                 |
+| **Reasoning Guidance** | 2/3       | Good meeting principles embedded; type system guides engagement; but no explicit facilitation strategies |
+| **Output Quality**     | 3/3       | Table format with owners, times, types, and outputs; immediately usable                                  |
+| **Robustness**         | 2/3       | "Could be an email" check and buffer time handle common failures; but doesn't handle conflict scenarios  |
+| **Total**              | **13/15** |                                                                                                          |
 
 > **Scoring guide:** Below 9 = not ready for the repo. 9–12 = solid, worth including. 13+ = exceptional. See our [evaluation criteria](../EVALUATION-CRITERIA.md) for details.
