@@ -98,22 +98,24 @@ Re-score the rewritten prompt using the same rubric. Show the before and after s
 ## Example
 
 **Input:**
+
 > Prompt to evaluate: "Write me a PRD for a new onboarding flow. Make it detailed and include metrics."
 
 **Sample output excerpt:**
 
 > **Step 1: Scoring**
 >
-> | Criteria | Score | Why | How to improve |
-> |---|---|---|---|
-> | Specificity | 1/3 | No role defined, "detailed" is subjective, no success criteria | Define the AI's role (e.g., "expert PRD writer"), specify what "detailed" means (which sections, what depth), and state what a successful PRD looks like |
-> | Structure | 1/3 | Single sentence, no sections or sequencing | Break into sections: problem statement, goals, metrics, flows, edge cases, launch plan |
-> | Reasoning Guidance | 1/3 | No guidance on how to approach the task | Add methodology: "Start with the problem, then propose metrics, then describe flows screen by screen" |
-> | Output Quality | 1/3 | "Include metrics" but no format, no examples, no metric types specified | Specify: "Include a north star metric, 2-3 secondary metrics, and guardrail metrics with thresholds" |
-> | Robustness | 1/3 | No handling of missing information or ambiguity | Add: "Where I haven't provided details, make your best assumption and flag it as an open question" |
-> | **Total** | **5/15** | | |
+> | Criteria           | Score    | Why                                                                     | How to improve                                                                                                                                           |
+> | ------------------ | -------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+> | Specificity        | 1/3      | No role defined, "detailed" is subjective, no success criteria          | Define the AI's role (e.g., "expert PRD writer"), specify what "detailed" means (which sections, what depth), and state what a successful PRD looks like |
+> | Structure          | 1/3      | Single sentence, no sections or sequencing                              | Break into sections: problem statement, goals, metrics, flows, edge cases, launch plan                                                                   |
+> | Reasoning Guidance | 1/3      | No guidance on how to approach the task                                 | Add methodology: "Start with the problem, then propose metrics, then describe flows screen by screen"                                                    |
+> | Output Quality     | 1/3      | "Include metrics" but no format, no examples, no metric types specified | Specify: "Include a north star metric, 2-3 secondary metrics, and guardrail metrics with thresholds"                                                     |
+> | Robustness         | 1/3      | No handling of missing information or ambiguity                         | Add: "Where I haven't provided details, make your best assumption and flag it as an open question"                                                       |
+> | **Total**          | **5/15** |                                                                         |                                                                                                                                                          |
 >
 > **Step 2: Anti-patterns detected**
+>
 > - ❌ **Missing role:** No persona defined — the AI doesn't know if it should write like a junior PM or a CPO.
 > - ❌ **Hidden constraints:** "Detailed" implies a format expectation that isn't stated.
 > - ❌ **No output spec:** No section structure, length guidance, or template.
@@ -121,14 +123,14 @@ Re-score the rewritten prompt using the same rubric. Show the before and after s
 >
 > **Step 5: Score comparison**
 >
-> | Criteria | Before | After |
-> |---|---|---|
-> | Specificity | 1 | 3 |
-> | Structure | 1 | 3 |
-> | Reasoning Guidance | 1 | 3 |
-> | Output Quality | 1 | 3 |
-> | Robustness | 1 | 3 |
-> | **Total** | **5/15** | **15/15** |
+> | Criteria           | Before   | After     |
+> | ------------------ | -------- | --------- |
+> | Specificity        | 1        | 3         |
+> | Structure          | 1        | 3         |
+> | Reasoning Guidance | 1        | 3         |
+> | Output Quality     | 1        | 3         |
+> | Robustness         | 1        | 3         |
+> | **Total**          | **5/15** | **15/15** |
 
 ---
 
@@ -152,13 +154,13 @@ For more on writing and evaluating effective prompts, see: [Prompt Writing Best 
 
 ## Evaluation
 
-| Criteria | Score | Rationale |
-|---|---|---|
-| **Specificity** | 3/3 | Clear role (prompt engineering expert), five-step evaluation process, explicit rubric with scoring definitions |
-| **Structure** | 3/3 | Five distinct steps from scoring through comparison; rubric table is embedded directly |
-| **Reasoning Guidance** | 3/3 | Anti-pattern checklist, before/after comparison, and iterative rewrite all guide analytical thinking |
-| **Output Quality** | 3/3 | Score table + anti-patterns + rewrite + comparison + final re-score — complete evaluation package |
-| **Robustness** | 3/3 | Anti-pattern detection catches common failures; before/after comparison validates improvement; optional context variables handle varying levels of input |
-| **Total** | **15/15** | |
+| Criteria               | Score     | Rationale                                                                                                                                                |
+| ---------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Specificity**        | 3/3       | Clear role (prompt engineering expert), five-step evaluation process, explicit rubric with scoring definitions                                           |
+| **Structure**          | 3/3       | Five distinct steps from scoring through comparison; rubric table is embedded directly                                                                   |
+| **Reasoning Guidance** | 3/3       | Anti-pattern checklist, before/after comparison, and iterative rewrite all guide analytical thinking                                                     |
+| **Output Quality**     | 3/3       | Score table + anti-patterns + rewrite + comparison + final re-score — complete evaluation package                                                        |
+| **Robustness**         | 3/3       | Anti-pattern detection catches common failures; before/after comparison validates improvement; optional context variables handle varying levels of input |
+| **Total**              | **15/15** |                                                                                                                                                          |
 
 > **Scoring guide:** Below 9 = not ready for the repo. 9–12 = solid, worth including. 13+ = exceptional. See our [evaluation criteria](../EVALUATION-CRITERIA.md) for details.
